@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faucet Guru - Reseñas y Estrategias</title>
+    <meta name="description"
+        content="Encuentra las mejores faucets, PTC y minería de cripto. Reseñas reales, estrategias de juego y scripts.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <nav class="container">
+                <div class="logo" id="home-link">
+                    <span class="logo-icon">⚡</span>
+                    <h1>Faucet<span> Guru</span></h1>
+                </div>
+                <div class="nav-links">
+                    <button class="nav-btn active" data-filter="all">Todas</button>
+                    <button class="nav-btn" data-filter="faucet">Faucets</button>
+                    <button class="nav-btn" data-filter="mining">Minería</button>
+                    <button class="nav-btn" data-filter="ptc">PTC</button>
+                    <button class="nav-btn" id="blog-link">Blog</button>
+                </div>
+            </nav>
+        </header>
+
+        <main class="container">
+            <section id="hero">
+                <div class="hero-content">
+                    <h2>Maximiza tus Ganancias con <span>Cripto Faucets</span></h2>
+                    <p>Reseñas de confianza, estrategias profesionales y scripts verificados.</p>
+                </div>
+            </section>
+
+            <section id="content-area">
+                <!-- Se inyectará contenido dinámicamente -->
+                <div id="faucet-list" class="grid"></div>
+                <div id="faucet-detail" class="hidden"></div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2026 Faucet Guru. Tu guía premium en el mundo cripto.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/faucets.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
