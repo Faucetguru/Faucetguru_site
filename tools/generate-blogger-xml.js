@@ -53,12 +53,14 @@ files.forEach((file, index) => {
     <ns0:author>
       <ns0:name>FaucetGuru</ns0:name>
     </ns0:author>
+    <ns1:total>0</ns1:total>
   </ns0:entry>`;
 });
 
 const finalXml = `<?xml version='1.0' encoding='utf-8'?>
-<ns0:feed xmlns:ns0="http://www.w3.org/2005/Atom">
+<ns0:feed xmlns:ns0="http://www.w3.org/2005/Atom" xmlns:ns1="http://purl.org/syndication/thread/1.0">
   <ns0:title type="text">FaucetGuru Blog</ns0:title>
+  <ns0:generator version="7.00" uri="http://www.blogger.com">Blogger</ns0:generator>
   ${entriesXml}
 </ns0:feed>`;
 
